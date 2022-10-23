@@ -7,7 +7,13 @@
 <mat-toolbar color="primary" class="secondary-toolbar">
     <mat-toolbar-row>
         <button mat-flat-button color="primary" (click)="loadChild()">
-            Location & Time
+            Location & Directions
+          </button>
+        <button mat-flat-button color="primary" (click)="loadChild()">
+            Registry
+          </button>
+        <button mat-flat-button color="primary" (click)="loadChild()">
+            Replacement Invitation
           </button>
         <button mat-flat-button color="primary" disabled="false" (click)="loadChild()">
             Photos
@@ -15,4 +21,6 @@
     </mat-toolbar-row>
 </mat-toolbar>
 
-<app-location-time *ngIf="loadTimeAndDate"></app-location-time>
+<div class="apps">
+    <app-location-time *ngIf="loadTimeAndDate"></app-location-time>
+</div>
