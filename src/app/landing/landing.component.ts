@@ -7,15 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LandingComponent implements OnInit {
 
-  private registry = 'www.google.com';
+  registrySource = 'https://www.google.com';
 
   constructor() { }
 
   ngOnInit(): void {  }
-
-  openExternalRegistry() {
-    (window as any).open(this.registry, '_blank');
-  }
-
 
 }

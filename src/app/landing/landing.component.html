@@ -15,9 +15,11 @@
         <button mat-flat-button color="primary" [routerLink]="'replacement-invitation'">
           Replacement Invitation
         </button>
-        <button mat-flat-button color="primary" (click)="openExternalRegistry()">
-            Registry
-        </button>
+        <a  href="{{ registrySource }}" target="_blank">
+          <button mat-flat-button color="primary">
+              Registry
+          </button>
+        </a>
         <button mat-flat-button color="primary" disabled="true">
             Photos - coming soon!
         </button>

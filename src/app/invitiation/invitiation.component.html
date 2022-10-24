@@ -1,6 +1,8 @@
 <div class="viewer">
     
-    <!-- <button mat-raised-button color="accent" (onclick)="downloadFile()">Download</button> -->
+    <a  href="{{ pdfSrc }}" target="_blank" download="invitation.pdf">
+        <button mat-raised-button color="accent" >Download</button>
+    </a>
     
     <pdf-viewer [src]="pdfSrc"
                 [render-text]="true"
