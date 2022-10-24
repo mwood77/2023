@@ -1,21 +1,25 @@
 import { Injectable } from '@angular/core';
+import { BehaviorSubject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class AuthService {
 
+  public authenticated$ = new BehaviorSubject<boolean>(false);
+
   constructor() { }
 
   loggedIn() {
-    let hasToken = false;
     if (localStorage.getItem('token') == 'secretToken'){
-      hasToken = true;
+      this.authenticated$.next(true);
     }
-    return hasToken;
+    return this.authenticated$.getValue();
   }
 
   getToken() {
     return localStorage.getItem('token');
   }
+
+
 }

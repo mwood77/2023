@@ -7,16 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LandingComponent implements OnInit {
 
-  loadTimeAndDate = true;
+  private registry = 'www.google.com';
 
   constructor() { }
-  
 
-  ngOnInit(): void {
+  ngOnInit(): void {  }
+
+  openExternalRegistry() {
+    (window as any).open(this.registry, '_blank');
   }
 
-  loadChild() {
-    this.loadTimeAndDate = !this.loadTimeAndDate;    
-  }
 
 }

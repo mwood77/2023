@@ -12,6 +12,8 @@ import { FooterComponent } from './footer/footer.component';
 import { AuthService } from './services/auth.service';
 import { AuthGuard } from './services/auth-guard.service';
 
+import { PdfViewerModule } from 'ng2-pdf-viewer';
+
 /**
  * Angular Material
  */
@@ -26,6 +28,8 @@ import { AuthGuard } from './services/auth-guard.service';
  import { MatDialogModule } from '@angular/material/dialog';
  import { MatListModule } from '@angular/material/list';
 import { LocationTimeComponent } from './location-time/location-time.component';
+import { AccomodationComponent } from './accomodation/accomodation.component';
+import { InvitiationComponent } from './invitiation/invitiation.component';
 
 
 @NgModule({
@@ -35,10 +39,13 @@ import { LocationTimeComponent } from './location-time/location-time.component';
     LandingComponent,
     FooterComponent,
     LocationTimeComponent,
+    AccomodationComponent,
+    InvitiationComponent,
   ],
   imports: [
     FormsModule,
     BrowserModule,
+    PdfViewerModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     // Material

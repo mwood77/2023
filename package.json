@@ -20,6 +20,7 @@
     "@angular/platform-browser-dynamic": "^14.2.0",
     "@angular/router": "^14.2.0",
     "dotenv": "^16.0.3",
+    "ng2-pdf-viewer": "^9.1.2",
     "os-browserify": "^0.3.0",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",

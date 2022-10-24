@@ -1,3 +1,7 @@
-<div class="wrapper">
+<div *ngIf="this.authed">
+    <app-landing></app-landing>
+</div>
+
+<div class="outlet">
     <router-outlet></router-outlet>
 </div>

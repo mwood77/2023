@@ -6,21 +6,20 @@
 
 <mat-toolbar color="primary" class="secondary-toolbar">
     <mat-toolbar-row>
-        <button mat-flat-button color="primary" (click)="loadChild()">
+        <button mat-flat-button color="primary" [routerLink]="'location'">
             Location & Directions
-          </button>
-        <button mat-flat-button color="primary" (click)="loadChild()">
+        </button>
+        <button mat-flat-button color="primary" [routerLink]="'accomodation'">
+            Accomodation (not wedding)
+        </button>
+        <button mat-flat-button color="primary" [routerLink]="'replacement-invitation'">
+          Replacement Invitation
+        </button>
+        <button mat-flat-button color="primary" (click)="openExternalRegistry()">
             Registry
-          </button>
-        <button mat-flat-button color="primary" (click)="loadChild()">
-            Replacement Invitation
-          </button>
-        <button mat-flat-button color="primary" disabled="false" (click)="loadChild()">
-            Photos
-          </button>
+        </button>
+        <button mat-flat-button color="primary" disabled="true">
+            Photos - coming soon!
+        </button>
     </mat-toolbar-row>
 </mat-toolbar>
-
-<div class="apps">
-    <app-location-time *ngIf="loadTimeAndDate"></app-location-time>
-</div>
