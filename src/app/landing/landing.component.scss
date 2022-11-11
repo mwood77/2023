@@ -21,15 +21,10 @@
     margin-top: -10px;
     z-index: 3;
 
-    .mat-toolbar-row {
+    .mat-toolbar-row, .menu-button {
         padding-top: 15px;
     }
 
-    
-    .horizontal-buttons {
-        // display: flexbox;
-        // flex-direction: column;
-    }
 }
 
 .apps {

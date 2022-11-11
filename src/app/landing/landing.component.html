@@ -8,11 +8,12 @@
 
 <mat-toolbar color="primary" class="secondary-toolbar">
     
-    <button fxHide fxShow.md mat-flat-button color="primary" [matMenuTriggerFor]="menu" >
+    <button class="menu-button" fxShow='false' fxShow.lt-lg="true" mat-flat-button color="primary" [matMenuTriggerFor]="menu" >
         Menu
     </button>
 
-    <div fxHide fxShow.xs-md>
+    <!-- <div fxShow.gt-xs fxHide.gt-md > -->
+    <div fxShow='false'>
         <mat-toolbar-row>
             <mat-menu #menu="matMenu" xPosition="after">
                     <button mat-menu-item color="primary" [routerLink]="'location'">
@@ -36,7 +37,8 @@
         </mat-toolbar-row>
     </div>
 
-    <div fxHide fxShow.lg>
+    <!-- <div fxHide fxShow.lg> -->
+    <div fxShow="false" fxShow.gt-md="true">
         <mat-toolbar-row>
             <button mat-flat-button color="primary" [routerLink]="'location'">
                 Location & Directions
