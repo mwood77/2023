@@ -20,15 +20,9 @@
               #password="ngModel" 
               name="password"  
               class="full-width"  
-              [ngClass]="{ 'is-invalid':  password.invalid && password.touched }"  
+              [ngClass]="{ 'is-invalid':  password.invalid && password.touched }" 
+              (keydown.enter)='loginUser()' 
             required >
-
-            <!-- <mat-error *ngIf="passwordFormControl.hasError('email') && !passwordFormControl.hasError('required')">
-              Incorrect password supplied
-            </mat-error>
-            <mat-error *ngIf="passwordFormControl.hasError('required')">
-              Password is <strong>required</strong>
-            </mat-error> -->
           </mat-form-field>
         </div>
       </form>

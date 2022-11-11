@@ -1,5 +1,4 @@
 export const environment = {
   production: true,
-  //@todo - fix this
-  password: 'farts',
+  password: 'september6',
 };

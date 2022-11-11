@@ -30,7 +30,9 @@ import { PdfViewerModule } from 'ng2-pdf-viewer';
 import { LocationTimeComponent } from './location-time/location-time.component';
 import { AccomodationComponent } from './accomodation/accomodation.component';
 import { InvitiationComponent } from './invitiation/invitiation.component';
-
+import { MatSidenavModule } from '@angular/material/sidenav'
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { MatMenuModule } from '@angular/material/menu'
 
 @NgModule({
   declarations: [
@@ -56,6 +58,9 @@ import { InvitiationComponent } from './invitiation/invitiation.component';
     MatDividerModule,
     MatToolbarModule,
     MatGridListModule,
+    MatSidenavModule,
+    FlexLayoutModule,
+    MatMenuModule
   ],
   providers: [ AuthService, AuthGuard,],
   bootstrap: [AppComponent]
