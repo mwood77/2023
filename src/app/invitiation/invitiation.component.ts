@@ -9,7 +9,8 @@ export class InvitiationComponent implements OnInit {
 
   constructor() { }
 
-  pdfSrc = './assets/example.pdf';
+  pdfSrc = './assets/invite-sept6.pdf';
+  pdfSrcHiRes = './assets/invite-sept6-hires.pdf';
 
   ngOnInit(): void {
   }
