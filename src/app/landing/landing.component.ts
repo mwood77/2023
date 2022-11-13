@@ -7,8 +7,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LandingComponent implements OnInit {
 
-  registrySource = 'https://www.google.com';
-
   constructor() { }
 
   ngOnInit(): void {  }

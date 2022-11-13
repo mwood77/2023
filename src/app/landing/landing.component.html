@@ -8,55 +8,50 @@
 
 <mat-toolbar color="primary" class="secondary-toolbar">
     
-    <button class="menu-button" fxShow='false' fxShow.lt-lg="true" mat-flat-button color="primary" [matMenuTriggerFor]="menu" >
+    <button class="menu-button" fxShow='false' fxShow.lt-lg="true" mat-flat-button color="primary" [matMenuTriggerFor]="menu" aria-label="Home icon for buttn with a menu">
+        <mat-icon>menu</mat-icon>
         Menu
     </button>
 
-    <!-- <div fxShow.gt-xs fxHide.gt-md > -->
     <div fxShow='false'>
         <mat-toolbar-row>
             <mat-menu #menu="matMenu" xPosition="after">
                     <button mat-menu-item color="primary" [routerLink]="'location'">
                         Location & Directions
                     </button>
-                    <button mat-menu-item color="primary" [routerLink]="'accomodation'">
+                    <button mat-menu-item color="primary" [routerLink]="'accommodation'">
                         Accommodation (not wedding)
                     </button>
                     <button mat-menu-item color="primary" [routerLink]="'replacement-invitation'">
                         Replacement Invitation
                     </button>
-                    <button mat-menu-item color="primary" disabled="true">
-                        Photos - coming soon!
+                    <button mat-menu-item color="primary" [routerLink]="'registry'">
+                        Registry
                     </button>
-                    <a mat-menu-item href="{{ registrySource }}" target="_blank">
-                        <button mat-button color="secondary" style="padding: 0; margin: -5px;">
-                            Registry
-                        </button>
-                    </a>
+                    <button mat-menu-item color="primary" disabled="true">
+                        Photos - coming after!
+                    </button>
             </mat-menu>
         </mat-toolbar-row>
     </div>
 
-    <!-- <div fxHide fxShow.lg> -->
     <div fxShow="false" fxShow.gt-md="true">
         <mat-toolbar-row>
             <button mat-flat-button color="primary" [routerLink]="'location'">
                 Location & Directions
             </button>
-            <button mat-flat-button color="primary" [routerLink]="'accomodation'">
+            <button mat-flat-button color="primary" [routerLink]="'accommodation'">
                 Accommodation (not wedding)
             </button>
             <button mat-flat-button color="primary" [routerLink]="'replacement-invitation'">
                 Replacement Invitation
             </button>
-            <button mat-flat-button color="primary" disabled="true">
-                Photos - coming soon!
+            <button mat-flat-button color="primary" [routerLink]="'registry'">
+                Registry
             </button>
-            <a  href="{{ registrySource }}" target="_blank">
-                <button mat-flat-button color="primary">
-                    Registry
-                </button>
-            </a>
+            <button mat-flat-button color="primary" disabled="true">
+                Photos - coming after!
+            </button>
         </mat-toolbar-row>
     </div>
 

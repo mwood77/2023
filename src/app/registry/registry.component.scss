@@ -1,0 +1,25 @@
+* {
+    overflow: hidden;
+}
+
+.text {
+    padding: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    margin: 3%;
+    padding-top: 6%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+p {
+    color: white;
+    font-size: large;
+}

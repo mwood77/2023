@@ -17,22 +17,20 @@ import { PdfViewerModule } from 'ng2-pdf-viewer';
 /**
  * Angular Material
  */
- import { MatCardModule } from '@angular/material/card';
- import { MatButtonModule } from '@angular/material/button';
- import { MatInputModule } from '@angular/material/input';
- import { MatToolbarModule } from '@angular/material/toolbar'
- import { MatDividerModule } from '@angular/material/divider';
- import { MatGridListModule } from '@angular/material/grid-list'
- import { MatExpansionModule } from '@angular/material/expansion';
- import { MatIconModule } from '@angular/material/icon';
- import { MatDialogModule } from '@angular/material/dialog';
- import { MatListModule } from '@angular/material/list';
+import { MatCardModule } from '@angular/material/card';
+import { MatButtonModule } from '@angular/material/button';
+import { MatInputModule } from '@angular/material/input';
+import { MatToolbarModule } from '@angular/material/toolbar'
+import { MatDividerModule } from '@angular/material/divider';
+import { MatGridListModule } from '@angular/material/grid-list'
+import { MatIconModule } from '@angular/material/icon';
 import { LocationTimeComponent } from './location-time/location-time.component';
 import { AccomodationComponent } from './accomodation/accomodation.component';
 import { InvitiationComponent } from './invitiation/invitiation.component';
 import { MatSidenavModule } from '@angular/material/sidenav'
 import { FlexLayoutModule } from '@angular/flex-layout';
-import { MatMenuModule } from '@angular/material/menu'
+import { MatMenuModule } from '@angular/material/menu';
+import { RegistryComponent } from './registry/registry.component'
 
 @NgModule({
   declarations: [
@@ -43,6 +41,7 @@ import { MatMenuModule } from '@angular/material/menu'
     LocationTimeComponent,
     AccomodationComponent,
     InvitiationComponent,
+    RegistryComponent,
   ],
   imports: [
     FormsModule,
