@@ -30,7 +30,8 @@ import { InvitiationComponent } from './invitiation/invitiation.component';
 import { MatSidenavModule } from '@angular/material/sidenav'
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatMenuModule } from '@angular/material/menu';
-import { RegistryComponent } from './registry/registry.component'
+import { RegistryComponent } from './registry/registry.component';
+import { DressCodeComponent } from './dress-code/dress-code.component'
 
 @NgModule({
   declarations: [
@@ -42,6 +43,7 @@ import { RegistryComponent } from './registry/registry.component'
     AccomodationComponent,
     InvitiationComponent,
     RegistryComponent,
+    DressCodeComponent,
   ],
   imports: [
     FormsModule,
